@@ -14,4 +14,11 @@
     "@astrojs/sitemap": "^3.3.0",
     "astro": "^5.6.1"
   }
+  "scripts": {
+  "dev": "astro dev",
+  "build": "astro build",
+  "preview": "astro preview",
+  "deploy": "npm run build && echo > dist/.nojekyll && git add . && git commit -m 'Build site' && git subtree push --prefix dist origin gh-pages"
+  }
+
 }
