@@ -1,12 +1,23 @@
-<!-- index.html -->
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Miles Walker - PhD, Astro, and AI</title>
-</head>
-<body>
-  <h1>Hello! I'm Miles 👋</h1>
-  <p>Welcome to my little corner of the universe.</p>
-  <p>PhD in XAI | Astrophotographer | Cricket Enthusiast</p>
-</body>
-</html>
+---
+title: Home
+layout: ../layouts/Layout.astro
+---
+
+<!-- src/pages/index.astro -->
+
+<section class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-black to-gray-900 text-white px-6 text-center">
+  <h1 class="text-5xl md:text-6xl font-bold mb-6">Miles Walker</h1>
+  <p class="text-xl md:text-2xl max-w-2xl mb-10">PhD Researcher in Explainable AI | Astrophotographer | Cricket Enthusiast</p>
+  
+  <div class="flex flex-wrap justify-center gap-6">
+    <a href="/research" class="bg-white text-black px-6 py-3 rounded-2xl text-lg hover:bg-gray-200 transition">Research</a>
+    <a href="/astrophotography" class="bg-white text-black px-6 py-3 rounded-2xl text-lg hover:bg-gray-200 transition">Astrophotography</a>
+    <a href="/contact" class="bg-white text-black px-6 py-3 rounded-2xl text-lg hover:bg-gray-200 transition">Contact</a>
+  </div>
+
+  <div class="mt-16 max-w-3xl text-base md:text-lg text-gray-300">
+    <p>
+      I'm currently pursuing a PhD at Lancaster University, where I explore the intersection of explainability and reinforcement learning—specifically, leveraging the multiplicity of good models to make AI smarter and more trustworthy. When I’m not battling black-box models, you’ll probably find me behind a telescope capturing deep-sky objects like the Elephant’s Trunk Nebula or Orion’s Belt.
+    </p>
+  </div>
+</section>
